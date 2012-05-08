@@ -20,7 +20,7 @@ class Admin extends MX_Controller
 		
 		if($this->form_validation->run())
 		{
-			$this->uri->redirect('admin/index');
+			redirect('admin/index');
 		}
 	
 		$this->load->view('forgot_password');
