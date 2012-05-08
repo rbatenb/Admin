@@ -4,7 +4,7 @@ class Admin extends MX_Controller
 {
 	public function __construct()
 	{
-		parent::Controller();
+		parent::__construct();
 	}
 
 	public function index()
