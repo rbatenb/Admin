@@ -8,5 +8,5 @@ class News extends MX_Controller
 	}
 }
 
-/* End of file login.php */
-/* Location: ./application/modules/login/controllers/login.php */
+/* End of file news.php */
+/* Location: ./application/modules/news/controllers/news.php */

@@ -8,5 +8,5 @@ class Admin extends MX_Controller
 	}
 }
 
-/* End of file login.php */
-/* Location: ./application/modules/login/controllers/login.php */
+/* End of file admin.php */
+/* Location: ./application/modules/admin/controllers/admin.php */
