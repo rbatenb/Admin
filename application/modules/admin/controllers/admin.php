@@ -2,14 +2,23 @@
 
 class Admin extends MX_Controller 
 {
-	public function __construct()
-	{
-		modules::run('login/is_logged_in');
-	}
-
 	public function index()
 	{
+		modules::run('login/is_logged_in');
+		
 		$this->load->view('admin'); 
+	}
+	
+	public function forgot_password()
+	{
+		$this->form_validation->set_rules('email', 'email', 'required|valid_email');
+		
+		if($this->form_validation->run())
+		{
+			$this->uri->redirect('admin/index');
+		}
+	
+		$this->load->view('forgot_password');
 	}
 }
 
