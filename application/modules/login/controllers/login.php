@@ -7,7 +7,7 @@ class Login extends MX_Controller
 		$this->load->view('login');
 	}
 	
-	private function is_logged_in()
+	public function is_logged_in()
 	{
 		echo 'You are not logged in';
 		die(); 
