@@ -2,6 +2,11 @@
 
 class Admin extends MX_Controller 
 {
+	public function __construct()
+	{
+		modules::run('login/is_logged_in');
+	}
+
 	public function index()
 	{
 		$this->load->view('admin');
