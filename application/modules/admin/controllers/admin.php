@@ -9,7 +9,7 @@ class Admin extends MX_Controller
 
 	public function index()
 	{
-		$this->load->view('admin');
+		$this->load->view('admin'); 
 	}
 }
 

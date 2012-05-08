@@ -10,7 +10,7 @@ class Login extends MX_Controller
 	private function is_logged_in()
 	{
 		echo 'You are not logged in';
-		die();
+		die(); 
 	}
 }
 
