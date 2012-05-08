@@ -40,7 +40,7 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
-$route['(:any)/(:any)'] = 'site/$2';
+$route['/(:any)'] = 'site/page/$2';
 $route['admin/login'] = 'login';
 $route['admin/news'] = 'news';
 
