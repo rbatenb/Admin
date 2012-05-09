@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends MX_Controller 
+class Users extends MX_Controller 
 {
 	public function __construct()
 	{
@@ -11,9 +11,9 @@ class User extends MX_Controller
 	{
 		modules::run('login/is_logged_in');
 		
-		$this->load->view('user'); 
+		$this->load->view('users'); 
 	}
 }
 
-/* End of file user.php */
-/* Location: ./application/modules/user/controllers/user.php */
+/* End of file users.php */
+/* Location: ./application/modules/users/controllers/users.php */
