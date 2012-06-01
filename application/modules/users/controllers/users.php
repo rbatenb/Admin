@@ -11,7 +11,7 @@ class Users extends MX_Controller
 	{
 		modules::run('login/is_logged_in');
 		
-		$this->load->view('users'); 
+		$this->load->view('users/index'); 
 	}
 }
 

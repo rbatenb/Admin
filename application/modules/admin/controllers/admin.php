@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends MX_Controller 
+class Admin extends MX_Controller 
 {
 	public function __construct()
 	{
@@ -11,9 +11,15 @@ class User extends MX_Controller
 	{
 		modules::run('login/is_logged_in');
 		
-		$this->load->view('admin');
+		$this->load->view('admin/index');
+	}
+	
+	public function logout()
+	{
+		session_destroy();
+		redirect('admin/login');
 	}
 }
 
-/* End of file user.php */
-/* Location: ./application/modules/user/controllers/user.php */
+/* End of file admin.php */
+/* Location: ./application/modules/admin/controllers/admin.php */
