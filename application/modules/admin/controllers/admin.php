@@ -10,6 +10,8 @@ class User extends MX_Controller
 	public function index()
 	{
 		modules::run('login/is_logged_in');
+		
+		$this->load->view('admin');
 	}
 }
 
