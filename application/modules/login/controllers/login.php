@@ -8,9 +8,11 @@ class Login extends MX_Controller
 	}
 	
 	public function is_logged_in()
-	{
-		echo 'You are not logged in';
-		die(); 
+	{	
+		if(!isset($_SESSION['login_salt']))
+		{
+			redirect('login/index');
+		}
 	}
 }
 
