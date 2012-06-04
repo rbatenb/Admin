@@ -11,11 +11,16 @@ class Admin extends MX_Controller
 	{
 		modules::run('login/is_logged_in');
 		
-		$this->load->view('admin/index');
+		$this->load->model('admin_model');
+		$data = $this->admin_model->fetch_all();
+		
+		$this->load->view('admin/index', $data);
 	}
 	
 	public function logout()
 	{
+		modules::run('login/is_logged_in');
+	
 		session_destroy();
 		redirect('admin/login');
 	}
